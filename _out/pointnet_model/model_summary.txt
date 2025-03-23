@@ -1,0 +1,50 @@
+Model: "pointnet"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 2000, 4)]         0         
+                                                                 
+ conv1d (Conv1D)             (None, 2000, 64)          320       
+                                                                 
+ batch_normalization (BatchN  (None, 2000, 64)         256       
+ ormalization)                                                   
+                                                                 
+ conv1d_1 (Conv1D)           (None, 2000, 128)         8320      
+                                                                 
+ batch_normalization_1 (Batc  (None, 2000, 128)        512       
+ hNormalization)                                                 
+                                                                 
+ conv1d_2 (Conv1D)           (None, 2000, 256)         33024     
+                                                                 
+ batch_normalization_2 (Batc  (None, 2000, 256)        1024      
+ hNormalization)                                                 
+                                                                 
+ global_max_pooling1d (Globa  (None, 256)              0         
+ lMaxPooling1D)                                                  
+                                                                 
+ dense (Dense)               (None, 512)               131584    
+                                                                 
+ batch_normalization_3 (Batc  (None, 512)              2048      
+ hNormalization)                                                 
+                                                                 
+ dropout (Dropout)           (None, 512)               0         
+                                                                 
+ dense_1 (Dense)             (None, 256)               131328    
+                                                                 
+ batch_normalization_4 (Batc  (None, 256)              1024      
+ hNormalization)                                                 
+                                                                 
+ dropout_1 (Dropout)         (None, 256)               0         
+                                                                 
+ dense_2 (Dense)             (None, 128)               32896     
+                                                                 
+ batch_normalization_5 (Batc  (None, 128)              512       
+ hNormalization)                                                 
+                                                                 
+ dense_3 (Dense)             (None, 2)                 258       
+                                                                 
+=================================================================
+Total params: 343,106
+Trainable params: 340,418
+Non-trainable params: 2,688
+_________________________________________________________________

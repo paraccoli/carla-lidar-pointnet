@@ -1,0 +1,17 @@
+# データとモデル
+_out/lidar_data/**/*.npy
+_out/lidar_dataset/*.npy
+_out/pointnet_model/*.h5
+
+# キャッシュと一時ファイル
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# 環境設定
+.env
+.venv
+env/
+venv/
+ENV/

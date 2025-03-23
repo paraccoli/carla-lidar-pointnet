@@ -1,0 +1,8 @@
+Source directory: _out/lidar_data\run_20250323_180036
+Task: classification
+Total samples: 4910
+Point cloud shape: (4910, 2000, 4)
+Train samples: 3142
+Validation samples: 786
+Test samples: 982
+Label distribution: [4175  735]
